@@ -1,28 +1,68 @@
-import React from "react"
+import React, { useEffect } from "react";
+import "../styles/Button.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
-const Button = ({text}) => {
+const Button = ({ text, color, bgcolor, border }) => {
+  useEffect(() => {
+    Aos.init({
+      duration: 500,
+      offset: 200,
+    });
+  }, []);
+
+  if (border) {
     return (
       <button
+        data-aos="fade-left"
         style={{
-          padding: "1rem 3rem",
-          backgroundColor: "#FFBD37",
+          padding: "1vw 3rem",
+          backgroundColor: `${bgcolor || "#FFBD37"}`,
           borderRadius: "3rem",
           border: "none",
           outline: "none",
           display: "grid",
           placeItems: "center",
+          cursor: "pointer",
+          border: ".1rem solid #ffbd37",
         }}
       >
         <span
           style={{
             textTransform: "capitalize",
-            color: "#233348",
+            color: ` ${color || "#233348"}`,
+            fontWeight: "bold",
           }}
         >
           {text || "order"}
         </span>
       </button>
     );
-}
+  }
+  return (
+    <button
+      className="padding"
+      style={{
+        backgroundColor: `${bgcolor || "#FFBD37"}`,
+        borderRadius: "3rem",
+        border: "none",
+        outline: "none",
+        display: "grid",
+        placeItems: "center",
+        cursor: "pointer",
+      }}
+    >
+      <span
+        style={{
+          textTransform: "capitalize",
+          color: ` ${color || "#233348"}`,
+          fontWeight: "bold",
+        }}
+      >
+        {text || "order"}
+      </span>
+    </button>
+  );
+};
 
 export default Button;
