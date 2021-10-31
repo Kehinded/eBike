@@ -1,0 +1,16 @@
+.padding {
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+
+  @media only screen and (max-width: 45em) {
+    padding: 0.5rem 2rem;
+  }
+}
+
+span {
+  font-size: 1.5rem;
+
+  @media only screen and (max-width: 45em) {
+    font-size: 1.3rem;
+  }
+}

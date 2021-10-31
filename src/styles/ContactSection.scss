@@ -1,0 +1,127 @@
+.contact-section {
+  width: 100%;
+  min-height: 20rem;
+  margin-top: 10rem;
+  padding-bottom: 3rem;
+  position: relative;
+  background-color: var(--primary-color-dark);
+  padding-top: 6rem;
+
+  .contact-wrapper {
+    width: 80%;
+    margin: 0rem auto;
+    display: flex;
+    color: var(--white-color);
+
+    @media only screen and (max-width: 39em) {
+      flex-direction: column;
+    }
+
+    .box-1 {
+      flex: 0 0 50%;
+      display: flex;
+      flex-direction: column;
+
+      @media only screen and (max-width: 39em) {
+        flex: 1;
+        margin-bottom: 3rem;
+        margin-top: -3rem;
+      }
+
+      .logo-box {
+        flex: 0 0 20%;
+        display: flex;
+        align-items: center;
+
+        .round-text {
+          margin-right: 0.8rem;
+          background-color: var(--white-color);
+          height: 4rem;
+          width: 4rem;
+          border-radius: 50%;
+          display: grid;
+          place-items: center;
+
+          span {
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary-color-light);
+          }
+        }
+
+        .text {
+          font-size: 2rem;
+          font-weight: bold;
+          color: #ffffff;
+        }
+      }
+      .text {
+        margin: 2rem 0rem;
+        font-size: 1.3rem;
+        width: 60%;
+        color: rgba(255, 255, 255, 0.8);
+
+        @media only screen and (max-width: 39em) {
+          width: 100%;
+        }
+      }
+      .copy {
+        font-size: 1.3rem;
+        color: rgba(255, 255, 255, 0.8);
+      }
+    }
+
+    .box-2 {
+      flex: 1;
+      display: flex;
+      align-items: center;
+
+      .company-box {
+        flex: 0 0 50%;
+        display: flex;
+        flex-direction: column;
+
+        .title {
+          text-transform: capitalize;
+          color: #ffffff;
+          margin-bottom: 1rem;
+          font-weight: bold;
+        }
+
+        .list {
+          list-style: none;
+
+          .item {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 0.7rem;
+            text-transform: capitalize;
+          }
+        }
+      }
+
+      .help-box {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        .title {
+          text-transform: capitalize;
+          color: #ffffff;
+          margin-bottom: 1rem;
+          font-weight: bold;
+        }
+
+        .list {
+          list-style: none;
+
+          .item {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 0.7rem;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+  }
+}
