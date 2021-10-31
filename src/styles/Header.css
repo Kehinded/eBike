@@ -1,0 +1,129 @@
+.header-section {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  min-height: 80vh;
+}
+.header-section .nav-box {
+  flex: 0 0 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.header-section .nav-box .logo-box {
+  flex: 0 0 20%;
+  display: flex;
+  align-items: center;
+}
+.header-section .nav-box .logo-box .round-text {
+  margin-right: 0.8rem;
+  background-color: var(--primary-color-light);
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.header-section .nav-box .logo-box .round-text span {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--white-color);
+}
+.header-section .nav-box .logo-box .text {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.header-section .nav-box .logo-box .white-color {
+  background-color: var(--white-color);
+}
+.header-section .nav-box .nav-list {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+}
+.header-section .nav-box .nav-list .nav-item {
+  width: 9rem;
+}
+.header-section .nav-box .nav-list .nav-item:not(:last-child) {
+  margin-right: 3rem;
+}
+.header-section .nav-box .nav-list .nav-item .nav-link {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--text-light-color);
+  text-transform: capitalize;
+  transition: all 0.3s;
+}
+.header-section .nav-box .nav-list .nav-item .nav-link:active, .header-section .nav-box .nav-list .nav-item .nav-link:hover {
+  color: var(--text-dark-color);
+  font-weight: bold;
+  color: var(--text-dark-color);
+}
+.header-section .nav-box .nav-list .nav-item .active {
+  font-weight: bold;
+}
+.header-section .content-box {
+  flex: 1;
+  display: flex;
+}
+.header-section .content-box .box-1 {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.header-section .content-box .box-1 > *:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.header-section .content-box .box-1 .text-one {
+  margin-top: 3rem;
+  font-size: 5vw;
+  font-weight: bold;
+}
+.header-section .content-box .box-1 .text-two {
+  font-size: 2rem;
+  color: var(--text-light-color);
+}
+.header-section .content-box .box-1 .input-group {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem;
+  border: 0.1rem solid var(--border-color);
+  border-radius: 2rem;
+}
+.header-section .content-box .box-1 .input-group .icon {
+  flex: 0 0 10%;
+  width: 2rem;
+  height: 2rem;
+}
+.header-section .content-box .box-1 .input-group .input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: var(--white-color);
+  padding: 0.5rem 0.2rem;
+}
+.header-section .content-box .box-1 .input-group .btn {
+  flex: 0 0 20%;
+  margin-left: 0.2rem;
+}
+.header-section .content-box .box-2 {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+}
+.header-section .content-box .box-2 .img-box {
+  height: 100%;
+  width: 100%;
+}
+.header-section .content-box .box-2 .img-box .img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}/*# sourceMappingURL=Header.css.map */

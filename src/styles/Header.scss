@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     width: 75%; 
-    height: 80vh;
+    min-height: 80vh;
 
     .nav-box{
         flex: 0 0 15%;
@@ -94,7 +94,7 @@
 
             .text-one{
                 margin-top:3rem;
-                font-size: 10vw;   
+                font-size: 5vw;   
                 font-weight: bold;
             }
 
@@ -108,10 +108,12 @@
                 align-items: center;
                 padding: .6rem;
                 border: .1rem solid var(--border-color);
-                border-radius: 2rem;
+                border-radius: 2rem;             
 
                 .icon{
                     flex: 0 0 10%;
+                    width: 2rem;
+                    height: 2rem;
                 }
 
                 .input{
@@ -119,17 +121,16 @@
                     border: none;
                     outline: none;
                     background-color: var(--white-color);
-                    padding: 1rem .2rem;               
-                }
+                    padding: .5rem .2rem;                      
+                }   
 
                 .btn{
                     flex: 0 0 20%;
-                    margin-left: .2rem;
+                    margin-left: .2rem;          
                 }
             }
         }
         .box-2{
-            background-color: blue;
             flex: 1;
             display: flex;
             align-items: flex-start;
