@@ -1,13 +1,65 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&display=swap');
+
+
+*,
+*::after,
+*::before{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --white-color: #ffffff;
+  --primary-color-dark: #FCB72B;
+  --primary-color-light:  #FFBD37; 
+  --text-dark-color: #233348;
+  --text-light-color: #7D7987;
+  --dot-color: #FFE8B9;
+  --border-color: #C2CFE0;
 }
+
+
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-size: 1.4rem;
+  color: var( --text-dark-color);
+  display: grid;
+   grid-template-columns: [full-start] minmax(7rem, 1fr) [col-start] repeat(8, minmax(min-content, 16rem)) [col-end] minmax(7rem, 1fr) [full-end];
+    grid-template-rows: min-content ;
+  font-family: 'Mulish', sans-serif;
+  overflow-x: hidden;
+  background-color: var(--white-color); 
+}
+
+#root{
+  grid-column: full-start / full-end;  
+  overflow-x: hidden;    
+}            
+
+@media only screen and (max-width: 75em){
+  html{
+    font-size: 55%;
+  }
+}
+/* 
+@media only screen and (max-width: 72em){
+  body{
+    grid-template-columns: [full-start] minmax(3rem, 1fr) [col-start] repeat(8, minmax(min-content, 16rem)) [col-end] minmax(3rem, 1fr) [full-end];
+  }
+} */
+
+/* @media only screen and (max-width: 57em){
+  
+  #root{
+    grid-column: full-start / full-end;
+    overflow-x: hidden;   
+  }            
+  
+} */
