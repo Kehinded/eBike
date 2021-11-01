@@ -35,7 +35,7 @@
         background-color: var(--primary-color-light);
         height: 4rem;
         width: 4rem;
-        border-radius: 50%;
+        border-radius: 50%;           
         display: grid;
         place-items: center;
 
@@ -69,22 +69,11 @@
       }
 
       @media only screen and (max-width: 39em) {
-        flex-direction: column;
-        margin-left: auto;
-        margin-right: auto;
-        // display: none;
+        display: none;
       }
 
       .nav-item {
         width: 9rem;
-        transition: transform 0.5s cubic-bezier(1, 0, 0, 1), opacity 0.2s 0.5s,
-          height 0.2s 0.5s;
-
-        @media only screen and (max-width: 39em) {
-          transform: translateY(-30rem);
-          height: 0rem;
-          opacity: 0;
-        }
 
         &:not(:last-child) {
           margin-right: 3rem;
@@ -166,6 +155,7 @@
       }
 
       .input-group {
+        // margin-top: auto;    
         display: flex;
         align-items: center;
         padding: 0.6rem;
@@ -194,6 +184,10 @@
         .btn {
           flex: 0 0 20%;
           margin-left: 0.2rem;
+
+          @media only screen and (max-width: 39em){
+           flex: 0 0 30%;
+          }
         }
       }
     }
@@ -211,9 +205,9 @@
         width: 100%;
 
         .img {
-          object-fit: cover;
-          width: 100%;
-          height: 100%;
+          object-fit: contain;
+          width: 92%;
+          height: 92%;
           display: block;
         }
       }
@@ -221,19 +215,19 @@
   }
 }
 
-.nav-check {
-  display: none;
+// .nav-check {
+//   display: none;
 
-  //   &:checked ~ .nav-list {
-  //     display: flex;
-  //   }
+//   //   &:checked ~ .nav-list {
+//   //     display: flex;
+//   //   }
 
-  &:checked ~ .nav-list .nav-item {
-    transform: translateY(0rem);
-    opacity: 1;
-    height: 100%;
-  }
-}
+//   &:checked ~ .nav-list .nav-item {
+//     transform: translateY(0rem);
+//     opacity: 1;
+//     height: 100%;
+//   }
+// }
 
 .nav-label {
   @media only screen and (min-width: 39em) {
@@ -241,7 +235,8 @@
   }
 
   margin-left: auto;
-  margin-top: -6rem;
+  transform: translateY(-6rem);                                                                         
+  // margin-top: -6rem;           
   color: var(--white-color);
   background-color: var(--primary-color-dark);
   padding: 0.4rem 0.6rem 0.3rem 0.6rem;

@@ -128,15 +128,13 @@ const ProductSection = () => {
         </div>
         <div className="btn-box">
           <div
+            onClick={() => moveLeft("100")}
             className="btn"
             style={{
               backgroundColor: `${moveCard !== 0 ? "#FCB72B" : "#FFE8B9"}`,
             }}
           >
-            <FaLongArrowAltLeft
-              onClick={() => moveLeft("100")}
-              className="icon"
-            />
+            <FaLongArrowAltLeft className="icon" />
           </div>
           <div
             className="btn"

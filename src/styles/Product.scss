@@ -37,9 +37,9 @@
       display: grid;
       align-items: center;
       justify-self: center;
-      grid-template-columns: repeat(40, calc(25% - 1rem)); 
-      padding: 3rem;
-      grid-gap: 2rem;
+      grid-template-columns: repeat(40, minmax(20em, 25%)); 
+      padding: 3rem;   
+      grid-gap: 2rem;     
       transform: translateY(-20%);
       //   margin-top: -12rem;
 

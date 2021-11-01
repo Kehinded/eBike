@@ -33,7 +33,8 @@
 .product-section .product-wrapper .card-box {
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(40, minmax(30rem, calc(25% - 1rem)));
+  justify-self: center;
+  grid-template-columns: repeat(40, minmax(20em, 25%));
   padding: 3rem;
   grid-gap: 2rem;
   transform: translateY(-20%);
