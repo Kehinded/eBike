@@ -21,7 +21,7 @@ const HeaderSection = () => {
       </div>
       {/* end of nav box */}
       <div className="content-box">
-        <div className="box-1">   
+        <div className="box-1">
           <p className="text-one">Your Bike Electric Update</p>
           <p className="text-two">
             Dummy text progressive, and affordable healthcare, accessible on

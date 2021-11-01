@@ -21,6 +21,7 @@ const TestimonySection = () => {
           <p className="text" data-aos="fade-in">
             What our customer are saying
           </p>
+          <span></span>
         </div>
         <div className="content-box">
           <div className="name-image-box">

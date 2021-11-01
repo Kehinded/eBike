@@ -20,21 +20,21 @@
     right: 0;
     background-color: rgba(255, 255, 255, 0.6);
     height: 100%;
-    width: 19%;
+    width: calc(25% - 1rem);
     cursor: pointer;
   }
 }
 .product-section .product-wrapper {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
   margin: 0rem auto;
 }
 .product-section .product-wrapper .card-box {
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(40, 30rem);
-  grid-gap: 2.5rem;
+  justify-self: center;
+  grid-template-columns: repeat(40, calc(25% - 1rem));
   padding: 3rem;
   grid-gap: 2rem;
   transform: translateY(-20%);
