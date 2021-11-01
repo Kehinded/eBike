@@ -24,6 +24,7 @@ const Button = ({ text, color, bgcolor, withborder }) => {
           display: "grid",
           placeItems: "center",
           cursor: "pointer",
+          // eslint-disable-next-line no-dupe-keys
           border: ".1rem solid #ffbd37",
         }}
       >

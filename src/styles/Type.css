@@ -30,14 +30,6 @@
   display: flex;
   flex-direction: column;
   padding: 3rem 0rem;
-  -webkit-animation: advert-translate 45s infinite;
-          animation: advert-translate 45s infinite;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-timing-function: cubic-bezier(1, 1, 1, 1);
-          animation-timing-function: cubic-bezier(1, 1, 1, 1);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
 }
 .type-section .card-box .card-wrapper:hover .card {
   border: 0.1rem solid var(--primary-color-light);
@@ -70,13 +62,23 @@
   margin-top: 1rem;
   transition: all 0.1s;
 }
+.type-section .card-box-anime {
+  -webkit-animation: advert-translate 45s infinite;
+          animation: advert-translate 45s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: cubic-bezier(1, 1, 1, 1);
+          animation-timing-function: cubic-bezier(1, 1, 1, 1);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
 
 @-webkit-keyframes advert-translate {
   0% {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-450%);
+    transform: translateX(-70%);
   }
 }
 
@@ -85,6 +87,6 @@
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-450%);
+    transform: translateX(-70%);
   }
 }/*# sourceMappingURL=Type.css.map */

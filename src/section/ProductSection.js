@@ -48,42 +48,42 @@ const ProductSection = () => {
           <ProductCard
             tranvalue={moveCard}
             img={Productimgthree}
-            title="Additional eBike kit"
+            title="Jungle eBike kit"
           />
           <ProductCard
             tranvalue={moveCard}
             img={Productimgtwo}
-            title="Brampoton eBike kit"
+            title="Conversional eBike kit"
           />
           <ProductCard
             tranvalue={moveCard}
             img={Productimgthree}
-            title="Additional eBike kit"
+            title="Militant eBike kit"
           />
           <ProductCard
             tranvalue={moveCard}
             img={Productimg}
-            title="Universal eBike kit"
+            title="Rehab eBike kit"
           />
           <ProductCard
             tranvalue={moveCard}
             img={Productimgthree}
-            title="Additional eBike kit"
+            title="Zoominaly eBike kit"
           />
           <ProductCard
             tranvalue={moveCard}
             img={Productimgtwo}
-            title="Brampoton eBike kit"
+            title="Krastine eBike kit"
           />
           <ProductCard
             tranvalue={moveCard}
             img={Productimgthree}
-            title="Additional eBike kit"
+            title="Padding eBike kit"
           />
           <ProductCard
             tranvalue={moveCard}
             img={Productimg}
-            title="Universal eBike kit"
+            title="Nowergian eBike kit"
           />
           <ProductCard
             tranvalue={moveCard}

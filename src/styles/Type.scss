@@ -19,6 +19,7 @@
     }
   }
 
+
   .card-box {
     display: grid;
     grid-template-columns: repeat(8, 23rem);
@@ -29,10 +30,6 @@
       display: flex;
       flex-direction: column;
       padding: 3rem 0rem;
-        animation: advert-translate 45s infinite;
-            animation-fill-mode: both;
-            animation-timing-function: cubic-bezier(1,1,1,1);
-            backface-visibility: hidden;
 
       // &>*{
       //       animation: advert-translate 45s infinite;
@@ -78,6 +75,13 @@
       }
     }
   }
+
+  .card-box-anime{   
+        animation: advert-translate 45s infinite;
+            animation-fill-mode: both;
+            animation-timing-function: cubic-bezier(1,1,1,1);
+            backface-visibility: hidden;
+  }      
 }
 
 
@@ -88,6 +92,6 @@
     }
 
     100%{
-        transform: translateX(-450%);   
+        transform: translateX(-70%);   
     }
 }
