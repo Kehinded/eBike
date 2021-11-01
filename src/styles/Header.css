@@ -189,6 +189,11 @@
   flex: 0 0 20%;
   margin-left: 0.2rem;
 }
+@media only screen and (max-width: 39em) {
+  .header-section .content-box .box-1 .input-group .btn {
+    flex: 0 0 30%;
+  }
+  }
 .header-section .content-box .box-2 {
   flex: 1;
   display: flex;
