@@ -13,12 +13,14 @@ function App() {
   return (
     <div className="App">
       <Switch>
-      <Route exact path={"/" || "/header"} component={HeaderSection} />
-      <Route exact path={"/" || "/products"} component={ProductSection} />
-      <Route exact path={"/" || "/types"} component={TypeSection} />
-      <Route exact path={"/" || "/about"} component={AboutSection} />
-      <Route exact path={"/" || "/testimonies"} component={TestimonySection} />
-      <Route exact path={"/" || "/contact"} component={ContactSection} />
+        <Route path="/"> 
+          <HeaderSection />
+          <ProductSection />
+          <TypeSection />
+          <AboutSection />
+          <TestimonySection />
+          <ContactSection />
+        </Route>
       </Switch>
     </div>
   );

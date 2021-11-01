@@ -29,6 +29,17 @@
       display: flex;
       flex-direction: column;
       padding: 3rem 0rem;
+        animation: advert-translate 45s infinite;
+            animation-fill-mode: both;
+            animation-timing-function: cubic-bezier(1,1,1,1);
+            backface-visibility: hidden;
+
+      // &>*{
+      //       animation: advert-translate 45s infinite;
+      //       animation-fill-mode: both;
+      //       animation-timing-function: cubic-bezier(1,1,1,1);
+      //       backface-visibility: hidden;           
+      // }          
 
       &:hover .card {
         border: 0.1rem solid var(--primary-color-light);
@@ -67,4 +78,16 @@
       }
     }
   }
+}
+
+
+// animation
+@keyframes advert-translate{
+    0%{
+        transform: translateX(0%);
+    }
+
+    100%{
+        transform: translateX(-450%);   
+    }
 }

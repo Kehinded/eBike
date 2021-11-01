@@ -21,14 +21,14 @@ const HeaderSection = () => {
       </div>
       {/* end of nav box */}
       <div className="content-box">
-        <div className="box-1">
+        <div className="box-1">   
           <p className="text-one">Your Bike Electric Update</p>
           <p className="text-two">
             Dummy text progressive, and affordable healthcare, accessible on
             mobile and online for everyone
           </p>
           <div className="input-group">
-            <img className="icon" src={SearchIcon} />
+            <img className="icon"alt="" src={SearchIcon} />
             <input
               type="text"
               placeholder="Search Bike or anything"
@@ -44,7 +44,7 @@ const HeaderSection = () => {
           </figure>
         </div>
       </div>
-      <Dot top="15%" left="-15%" style="dot-box-2" />
+      <Dot top="15%" left="-15%" styling="dot-box-2" />
     </div>
   );
 };

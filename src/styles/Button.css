@@ -2,7 +2,6 @@
   padding: 1rem 3rem;
   font-size: 1.5rem;
 }
-
 @media only screen and (max-width: 45em) {
   .padding {
     padding: 0.5rem 2rem;
@@ -12,10 +11,8 @@
 span {
   font-size: 1.5rem;
 }
-
 @media only screen and (max-width: 45em) {
   span {
     font-size: 1.3rem;
   }
-}
-/*# sourceMappingURL=Button.css.map */
+}/*# sourceMappingURL=Button.css.map */

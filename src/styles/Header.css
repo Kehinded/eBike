@@ -1,9 +1,11 @@
 .header-section {
+  position: relative;
   align-self: center;
   display: flex;
   flex-direction: column;
   width: 75%;
   min-height: 80vh;
+  margin-bottom: 17rem;
 }
 .header-section .nav-box {
   flex: 0 0 15%;
@@ -11,10 +13,22 @@
   display: flex;
   align-items: center;
 }
+@media only screen and (max-width: 53em) {
+  .header-section .nav-box {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 0rem;
+  }
+}
 .header-section .nav-box .logo-box {
   flex: 0 0 20%;
   display: flex;
   align-items: center;
+}
+@media only screen and (max-width: 53em) {
+  .header-section .nav-box .logo-box {
+    margin-bottom: 2rem;
+  }
 }
 .header-section .nav-box .logo-box .round-text {
   margin-right: 0.8rem;
@@ -45,11 +59,37 @@
   list-style: none;
   justify-content: center;
 }
+@media only screen and (max-width: 53em) {
+  .header-section .nav-box .nav-list {
+    margin-left: 0rem;
+  }
+}
+@media only screen and (max-width: 39em) {
+  .header-section .nav-box .nav-list {
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .header-section .nav-box .nav-list .nav-item {
   width: 9rem;
+  transition: transform 0.5s cubic-bezier(1, 0, 0, 1), opacity 0.2s 0.5s, height 0.2s 0.5s;
+}
+@media only screen and (max-width: 39em) {
+  .header-section .nav-box .nav-list .nav-item {
+    transform: translateY(-30rem);
+    height: 0rem;
+    opacity: 0;
+  }
 }
 .header-section .nav-box .nav-list .nav-item:not(:last-child) {
   margin-right: 3rem;
+}
+@media only screen and (max-width: 39em) {
+  .header-section .nav-box .nav-list .nav-item:not(:last-child) {
+    margin-right: 0rem;
+    margin-bottom: 1.5rem;
+  }
 }
 .header-section .nav-box .nav-list .nav-item .nav-link {
   font-size: 1.5rem;
@@ -57,6 +97,7 @@
   color: var(--text-light-color);
   text-transform: capitalize;
   transition: all 0.3s;
+  cursor: pointer;
 }
 .header-section .nav-box .nav-list .nav-item .nav-link:active, .header-section .nav-box .nav-list .nav-item .nav-link:hover {
   color: var(--text-dark-color);
@@ -65,16 +106,27 @@
 }
 .header-section .nav-box .nav-list .nav-item .active {
   font-weight: bold;
+  color: var(--text-dark-color);
 }
 .header-section .content-box {
   flex: 1;
   display: flex;
+}
+@media only screen and (max-width: 39em) {
+  .header-section .content-box {
+    margin-top: -5.5rem;
+  }
 }
 .header-section .content-box .box-1 {
   flex: 0 0 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+@media only screen and (max-width: 49em) {
+  .header-section .content-box .box-1 {
+    flex: 1;
+  }
 }
 .header-section .content-box .box-1 > *:not(:last-child) {
   margin-bottom: 2rem;
@@ -83,22 +135,39 @@
   margin-top: 3rem;
   font-size: 5vw;
   font-weight: bold;
+  line-height: 1.2;
+}
+@media only screen and (max-width: 45em) {
+  .header-section .content-box .box-1 .text-one {
+    text-align: center;
+    align-self: center;
+    font-size: 3rem;
+  }
 }
 .header-section .content-box .box-1 .text-two {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  width: 85%;
   color: var(--text-light-color);
+}
+@media only screen and (max-width: 45em) {
+  .header-section .content-box .box-1 .text-two {
+    width: 70%;
+    align-self: center;
+    font-size: 1.4rem;
+  }
 }
 .header-section .content-box .box-1 .input-group {
   display: flex;
   align-items: center;
   padding: 0.6rem;
   border: 0.1rem solid var(--border-color);
-  border-radius: 2rem;
+  border-radius: 4rem;
 }
 .header-section .content-box .box-1 .input-group .icon {
   flex: 0 0 10%;
   width: 2rem;
   height: 2rem;
+  cursor: pointer;
 }
 .header-section .content-box .box-1 .input-group .input {
   flex: 1;
@@ -106,6 +175,15 @@
   outline: none;
   background-color: var(--white-color);
   padding: 0.5rem 0.2rem;
+}
+.header-section .content-box .box-1 .input-group .input::-moz-placeholder {
+  color: var(--border-color);
+}
+.header-section .content-box .box-1 .input-group .input:-ms-input-placeholder {
+  color: var(--border-color);
+}
+.header-section .content-box .box-1 .input-group .input::placeholder {
+  color: var(--border-color);
 }
 .header-section .content-box .box-1 .input-group .btn {
   flex: 0 0 20%;
@@ -115,6 +193,11 @@
   flex: 1;
   display: flex;
   align-items: flex-start;
+}
+@media only screen and (max-width: 49em) {
+  .header-section .content-box .box-2 {
+    display: none;
+  }
 }
 .header-section .content-box .box-2 .img-box {
   height: 100%;
@@ -126,4 +209,32 @@
   width: 100%;
   height: 100%;
   display: block;
+}
+
+.nav-check {
+  display: none;
+}
+.nav-check:checked ~ .nav-list .nav-item {
+  transform: translateY(0rem);
+  opacity: 1;
+  height: 100%;
+}
+
+.nav-label {
+  margin-left: auto;
+  margin-top: -6rem;
+  color: var(--white-color);
+  background-color: var(--primary-color-dark);
+  padding: 0.4rem 0.6rem 0.3rem 0.6rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+@media only screen and (min-width: 39em) {
+  .nav-label {
+    display: none;
+  }
+}
+.nav-label .nav-icon {
+  width: 3rem;
+  height: 3rem;
 }/*# sourceMappingURL=Header.css.map */

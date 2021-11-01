@@ -1,29 +1,21 @@
 .dot-box {
-  display: -ms-grid;
   display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: (1fr)[3];
-      grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-gap: 2rem;
 }
-
 @media only screen and (max-width: 49em) {
   .dot-box {
     grid-gap: 1.5rem;
   }
 }
-
 .dot-box .dot {
   width: 0.7rem;
   height: 0.7rem;
   border-radius: 50%;
   background-color: var(--dot-color);
 }
-
 @media only screen and (max-width: 49em) {
   .dot-box .dot {
     width: 0.5rem;
@@ -32,28 +24,20 @@
 }
 
 .dot-box-2 {
-  display: -ms-grid;
   display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[4];
-      grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
 }
-
 .dot-box-2 .dot {
   width: 0.7rem;
   height: 0.7rem;
   border-radius: 50%;
   background-color: var(--dot-color);
 }
-
 @media only screen and (max-width: 49em) {
   .dot-box-2 .dot {
     width: 0.5rem;
     height: 0.5rem;
   }
-}
-/*# sourceMappingURL=Dot.css.map */
+}/*# sourceMappingURL=Dot.css.map */

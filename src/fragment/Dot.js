@@ -1,11 +1,11 @@
 import React from "react";
 import "../styles/Dot.css";
 
-const Dot = ({ top, bottom, left, right, style, dotFour, bgcolor }) => {
+const Dot = ({ top, bottom, left, right, styling, dotFour, bgcolor }) => {
   if (dotFour) {
     return (
       <div
-        className={`dot-box ${style}`}
+        className={`dot-box ${styling}`}
         style={{
           position: "absolute",
           top: `${top}`,
@@ -28,7 +28,7 @@ const Dot = ({ top, bottom, left, right, style, dotFour, bgcolor }) => {
   }
   return (
     <div
-      className={`dot-box ${style}`}
+      className={`dot-box ${styling}`}
       style={{
         position: "absolute",
         top: `${top}`,

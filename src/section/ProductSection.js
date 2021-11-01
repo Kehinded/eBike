@@ -12,14 +12,21 @@ import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
 const ProductSection = () => {
   const [moveCard, setMoveCard] = useState(0);
 
-  const changeCardFunc = (val) => {
-    if (moveCard === 600 || moveCard === -600) {
-      setMoveCard(0);
-    } else {
+  const moveLeft = (val) => {
+    if (moveCard !== 0) {
       const newVal = moveCard + Number(val);
       setMoveCard(newVal);
+      // console.log(moveCard);
     }
-  };
+  }
+
+  const moveRight = (val) => {
+    if(moveCard !== -1600){
+      const newVal = moveCard - Number(val);
+    setMoveCard(newVal);
+    // console.log(moveCard);
+    }
+  }
 
   return (
     <div className="product-section" id="products">
@@ -120,10 +127,24 @@ const ProductSection = () => {
           />
         </div>
         <div className="btn-box">
-          <div className="btn" onClick={() => changeCardFunc("100")}>
-            <FaLongArrowAltLeft className="icon" />
+          <div
+            className="btn"
+            style={{
+              backgroundColor: `${moveCard !== 0 ? "#FCB72B" : "#FFE8B9"}`,
+            }}
+          >
+            <FaLongArrowAltLeft
+              onClick={() => moveLeft("100")}
+              className="icon"
+            />
           </div>
-          <div className="btn" onClick={() => changeCardFunc("-100")}>
+          <div
+            className="btn"
+            style={{
+              backgroundColor: `${moveCard !== -1600 ? "#FCB72B" : "#FFE8B9"}`,
+            }}
+            onClick={() => moveRight("100")}
+          >
             <FaLongArrowAltRight className="icon" />
           </div>
         </div>
