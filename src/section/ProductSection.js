@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import BgImg from "../asset/productbgimg.jpg";
+// import BgImg from "../asset/productbgimg.jpg";
 import ProductCard from "../component/ProductCard";
 import "../styles/Product.css";
 import Productimg from "../asset/productoneimg.jpg";

@@ -37,7 +37,7 @@ const AboutSection = () => {
             text="learn more"
             color="#FFBD37"
             bgcolor="#ffffff"
-            border={true}
+            withborder={true}
           />
         </div>
       </div>

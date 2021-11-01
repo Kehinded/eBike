@@ -3,7 +3,7 @@ import "../styles/Button.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-const Button = ({ text, color, bgcolor, border }) => {
+const Button = ({ text, color, bgcolor, withborder }) => {
   useEffect(() => {
     Aos.init({
       duration: 500,
@@ -11,7 +11,7 @@ const Button = ({ text, color, bgcolor, border }) => {
     });
   }, []);
 
-  if (border) {
+  if (withborder) {
     return (
       <button
         data-aos="fade-left"
